@@ -32,7 +32,12 @@ router.get("/register", userController.registerForm);
 //validate the registeration data
 //2. register the user
 //3. we need to log them in 
-router.post("/register", userController.validateRegister);
+router.post("/register", 
+userController.validateRegister,
+userController.register,
+
+
+);
 
 
 
